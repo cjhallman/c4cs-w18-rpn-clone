@@ -32,9 +32,9 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        result_text = "Result: " + result
-        if (int(result) % 2 == 0):
-            cprint(result_text, 'blue')
+        result_text = "Result: " + str(result)
+        if (result % 2 == 0):
+            cprint(result_text, 'red')
         else:
             cprint(result_text, 'blue')
 
